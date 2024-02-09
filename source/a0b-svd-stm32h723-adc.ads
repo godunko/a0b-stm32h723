@@ -3209,45 +3209,45 @@ package A0B.SVD.STM32H723.ADC is
       B_0x2 => 2,
       B_0x3 => 3);
 
-   --  External trigger selection for regular group These bits select the
-   --  external event used to trigger the start of conversion of a regular
-   --  group: ... Note: The software is allowed to write these bits only when
-   --  ADSTART = 0 (which ensures that no regular conversion is ongoing).
-   type ADC_CFGR_EXTSEL0_Field is
-     (--  adc_ext_trg0
-      B_0x0,
-      --  adc_ext_trg1
-      B_0x1,
-      --  adc_ext_trg2
-      B_0x2,
-      --  adc_ext_trg3
-      B_0x3,
-      --  adc_ext_trg4
-      B_0x4,
-      --  adc_ext_trg5
-      B_0x5,
-      --  adc_ext_trg6
-      B_0x6,
-      --  adc_ext_trg7
-      B_0x7,
-      --  adc_ext_trg31
-      B_0x1F)
-     with Size => 1;
-   for ADC_CFGR_EXTSEL0_Field use
-     (B_0x0 => 0,
-      B_0x1 => 1,
-      B_0x2 => 2,
-      B_0x3 => 3,
-      B_0x4 => 4,
-      B_0x5 => 5,
-      B_0x6 => 6,
-      B_0x7 => 7,
-      B_0x1F => 31);
-
-   --  ADC_CFGR_EXTSEL array
-   type ADC_CFGR_EXTSEL_Field_Array is array (0 .. 4)
-     of ADC_CFGR_EXTSEL0_Field
-     with Component_Size => 1, Size => 5;
+--   --  External trigger selection for regular group These bits select the
+--   --  external event used to trigger the start of conversion of a regular
+--   --  group: ... Note: The software is allowed to write these bits only when
+--   --  ADSTART = 0 (which ensures that no regular conversion is ongoing).
+--   type ADC_CFGR_EXTSEL0_Field is
+--     (--  adc_ext_trg0
+--      B_0x0,
+--      --  adc_ext_trg1
+--      B_0x1,
+--      --  adc_ext_trg2
+--      B_0x2,
+--      --  adc_ext_trg3
+--      B_0x3,
+--      --  adc_ext_trg4
+--      B_0x4,
+--      --  adc_ext_trg5
+--      B_0x5,
+--      --  adc_ext_trg6
+--      B_0x6,
+--      --  adc_ext_trg7
+--      B_0x7,
+--      --  adc_ext_trg31
+--      B_0x1F)
+--     with Size => 5;
+--   for ADC_CFGR_EXTSEL0_Field use
+--     (B_0x0 => 0,
+--      B_0x1 => 1,
+--      B_0x2 => 2,
+--      B_0x3 => 3,
+--      B_0x4 => 4,
+--      B_0x5 => 5,
+--      B_0x6 => 6,
+--      B_0x7 => 7,
+--      B_0x1F => 31);
+--
+--   --  ADC_CFGR_EXTSEL array
+--   type ADC_CFGR_EXTSEL_Field_Array is array (0 .. 4)
+--     of ADC_CFGR_EXTSEL0_Field
+--     with Component_Size => 1, Size => 5;
 
    --  Type definition for ADC_CFGR_EXTSEL
    type ADC_CFGR_EXTSEL_Field_1
@@ -3259,14 +3259,15 @@ package A0B.SVD.STM32H723.ADC is
             Val : A0B.Types.SVD.UInt5;
          when True =>
             --  EXTSEL as an array
-            Arr : ADC_CFGR_EXTSEL_Field_Array;
+            null;
+--            Arr : ADC_CFGR_EXTSEL_Field_Array;
       end case;
    end record
      with Unchecked_Union, Size => 5;
 
    for ADC_CFGR_EXTSEL_Field_1 use record
       Val at 0 range 0 .. 4;
-      Arr at 0 range 0 .. 4;
+--      Arr at 0 range 0 .. 4;
    end record;
 
    --  Data alignment This bit is set and cleared by software to select right

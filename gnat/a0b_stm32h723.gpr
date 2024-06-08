@@ -6,6 +6,7 @@
 
 with "a0b_base";
 with "a0b_common";
+with "a0b_armv7m";
 
 project A0B_STM32H723 is
 
@@ -20,7 +21,7 @@ project A0B_STM32H723 is
          null;
    end case;
 
-   for Source_Dirs use ("../source");
+   for Source_Dirs use ("../source", "../source/svd");
    for Object_Dir use "../.objs/" & A0B_Common.Object_Dir_Suffix;
 
    package Compiler is

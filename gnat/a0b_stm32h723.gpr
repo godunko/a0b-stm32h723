@@ -7,7 +7,7 @@
 with "a0b_base";
 with "a0b_common";
 
-project A0B_SVD_STM32H723 is
+project A0B_STM32H723 is
 
    for Target use "arm-eabi";
 
@@ -27,4 +27,4 @@ project A0B_SVD_STM32H723 is
       for Switches ("Ada") use A0B_Common.Compiler_Switches_Ada;
    end Compiler;
 
-end A0B_SVD_STM32H723;
+end A0B_STM32H723;

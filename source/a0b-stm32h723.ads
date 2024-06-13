@@ -12,6 +12,11 @@ package A0B.STM32H723
   with Preelaborate
 is
 
+   EXTI0       : constant A0B.ARMv7M.External_Interrupt_Number := 6;
+   EXTI1       : constant A0B.ARMv7M.External_Interrupt_Number := 7;
+   EXTI2       : constant A0B.ARMv7M.External_Interrupt_Number := 8;
+   EXTI3       : constant A0B.ARMv7M.External_Interrupt_Number := 9;
+   EXTI4       : constant A0B.ARMv7M.External_Interrupt_Number := 10;
    DMA1_STR0   : constant A0B.ARMv7M.External_Interrupt_Number := 11;
    DMA1_STR1   : constant A0B.ARMv7M.External_Interrupt_Number := 12;
    DMA1_STR2   : constant A0B.ARMv7M.External_Interrupt_Number := 13;
@@ -20,10 +25,14 @@ is
    DMA1_STR5   : constant A0B.ARMv7M.External_Interrupt_Number := 16;
    DMA1_STR6   : constant A0B.ARMv7M.External_Interrupt_Number := 17;
 
+   EXTI9_5     : constant A0B.ARMv7M.External_Interrupt_Number := 23;
+
    I2C1_EV     : constant A0B.ARMv7M.External_Interrupt_Number := 31;
    I2C1_ER     : constant A0B.ARMv7M.External_Interrupt_Number := 32;
    I2C2_EV     : constant A0B.ARMv7M.External_Interrupt_Number := 33;
    I2C2_ER     : constant A0B.ARMv7M.External_Interrupt_Number := 34;
+
+   EXTI15_10   : constant A0B.ARMv7M.External_Interrupt_Number := 40;
 
    DMA1_STR7   : constant A0B.ARMv7M.External_Interrupt_Number := 47;
 

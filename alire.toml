@@ -14,9 +14,6 @@ tags = ["embedded", "svd", "stm32", "stm32h7", "stm32h723"]
 [configuration]
 disabled = true
 
-[configuration.values]
-a0b_armv7m.fpu_extension = "VFPv5"
-
 [[depends-on]]
 a0b_base = "*"
 a0b_armv7m = "*"

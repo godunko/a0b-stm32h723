@@ -9,7 +9,7 @@ licenses = "Apache-2.0 WITH LLVM-exception"
 
 project-files=["gnat/a0b_stm32h723.gpr"]
 
-tags = ["embedded", "svd", "stm32", "stm32h7", "stm32h723"]
+tags = ["a0b", "embedded", "svd", "stm32", "stm32h7", "stm32h723"]
 
 [configuration]
 disabled = true

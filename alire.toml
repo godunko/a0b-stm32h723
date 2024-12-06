@@ -1,5 +1,6 @@
 name = "a0b_stm32h723"
-description = "A0B: STM32H723 support"
+description = "STM32H723 base and SVD package"
+website = "https://github.com/godunko/a0b-stm32h723"
 version = "0.1.0"
 
 authors = ["Vadim Godunko"]

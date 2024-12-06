@@ -4,9 +4,9 @@
 --  SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 --
 
-with "a0b_base";
+with "../config/a0b_stm32h723_config";
+
 with "a0b_common";
-with "a0b_armv7m";
 
 project A0B_STM32H723 is
 

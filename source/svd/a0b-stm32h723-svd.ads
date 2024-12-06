@@ -2,13 +2,13 @@ pragma Style_Checks (Off);
 
 --  This spec has been automatically generated from STM32H723.svd
 
-pragma Restrictions (No_Elaboration_Code);
 
 with System;
 
 --  STM32H723
 package A0B.STM32H723.SVD is
    pragma Preelaborate;
+   pragma No_Elaboration_Code_All;
 
    --------------------
    -- Base addresses --

@@ -13,9 +13,9 @@ project-files=["gnat/a0b_stm32h723.gpr"]
 tags = ["a0b", "embedded", "svd", "stm32", "stm32h7", "stm32h723"]
 
 [configuration]
-disabled = true
+generate_ada = false
+generate_c = false
+generate_gpr = true
 
 [[depends-on]]
-a0b_base = "*"
 a0b_armv7m = "*"
-gnat_arm_elf = "*"
